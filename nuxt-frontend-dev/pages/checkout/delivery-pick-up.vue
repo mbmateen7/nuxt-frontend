@@ -1,0 +1,143 @@
+<template>
+    <div class="pick-up-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-lg-12 mx-auto">
+                    <div class="warrenty-height-2 d-flex align-items-center justify-content-center">
+                        <div class="delivery-cards-inline-2" v-if="personalDetails">
+                            <div class="pick-up-box pick-up-box-site" :class="{'selected': delivery && d.id == delivery.id}" v-for="d in deliveries" :key="d.id">
+                                <h2 class="basic">{{ d.name }} </h2>
+                                <div class="pick-img">
+                                    <img class="img-fluid" :src="d.image" alt="img">
+                                </div>
+                                <h2 class="basic">{{ d.price | currencyFormat }}</h2>
+                                <p class="deliver-by" v-if="d.id == 1">Deliver after*</p>
+                                <p class="deliver-by" v-if="d.id == 2">Deliver by*</p>
+                                <h2 class="basic-2" v-if="d.id != 3">{{ d.duration }}</h2>
+                                <div class="location loc-deliverypick" v-if="d.id != 3">
+                                    <div><img src="/map-pin.svg" alt="img"></div>
+
+                                    <p class="deliver-by">{{ personalDetails.address }} </p>
+                                </div>
+                                <div class="location loc-deliverypick" v-if="d.id == 3">
+                                    <div>
+                                        <img src="/map-pin.svg" alt="img">
+                                    </div>
+
+                                    <p class="deliver-by">{{ storeAddress }} </p>
+                                </div>
+                                <hr class="hr-line mt-sett-align-top">
+                                <p class="deliver-by-2" v-if="d.id == 3">Pickup from one of our stores</p>
+                                <div class="custom-drop-deliver  mb-2 " v-if="d.id == 3">
+                                    <select class="custom-select" v-model="d.delivery_address" @change="storeAddress = $event.target.value">
+                                        <option value="2 Lover's Lane, Paget" selected>Paget</option>
+                                        <option value="10 Church Street, City of Hamilton">Hamilton</option>
+                                    </select>
+                                </div>
+                                <p class="deliver-by-2">Please Select Date and time</p>
+                                <div class="input-calender">
+                                    <date-picker class="custom-input" placeholder="Slect date and time for delivery" v-model="d.delivery_time" v-if="d.id == 1" :config="dateTimeConfig"></date-picker>
+                                    <date-picker class="custom-input" placeholder="Slect time for delivery" v-model="d.delivery_time" v-if="d.id == 2" :config="timeConfig"></date-picker>
+                                    <date-picker class="custom-input" placeholder="Slect date for pickup" v-model="d.delivery_time" v-if="d.id == 3" :config="dateConfig"></date-picker>
+                                    <div class="img-cal">
+                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12" height="12.656" viewBox="0 0 12 12.656">
+                                            <image id="calendar-and-time-icon" width="12" height="12.656" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACHCAYAAADeO1FzAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTQ1IDc5LjE2MzQ5OSwgMjAxOC8wOC8xMy0xNjo0MDoyMiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTkgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkM0QUQ5RThFQzIyQTExRUNBQjdEREZGNDAwRDk0QTIyIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkM0QUQ5RThGQzIyQTExRUNBQjdEREZGNDAwRDk0QTIyIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6QzRBRDlFOENDMjJBMTFFQ0FCN0RERkY0MDBEOTRBMjIiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6QzRBRDlFOERDMjJBMTFFQ0FCN0RERkY0MDBEOTRBMjIiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz5ZMTmoAAATQklEQVR42uxd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" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="add-to-cart">
+                                    <button type="button" class="add-cart-to" @click="selectDelivery(d)" v-if="!delivery || (delivery && d.id != delivery.id)" :disabled="!d.delivery_time">Select</button>
+                                    <button type="button" class="add-cart-to" v-if="delivery && d.id == delivery.id">Selected</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class=" d-flex align-items-center justify-content-center mt-3 ">
+                        <button @click="nextStep" class="save-btn-continue" type="button" :disabled="!delivery">
+                            Save &amp; Continue
+                        </button>
+                    </div>
+                    <div class="cneter-text-p mt-4">
+                        <p class="delivery-bottm-text">*delivery/pickup date is subject to payment and documentation completion</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
+<script>
+    import {
+        mapGetters
+    } from "vuex";
+    export default {
+        layout: 'checkout',
+        computed: {
+            ...mapGetters({
+                personalDetails: 'cart/getPersonalDetails',
+                delivery: 'cart/getDeliveryPickup'
+            })
+        },
+        data() {
+            return {
+                date: new Date(),
+                deliveries: [],
+                storeAddress: "2 Lover's Lane, Paget",
+                time: '',
+                timeConfig: {
+                    format: 'HH:mm',
+                    useCurrent: true,
+                },
+                dateTimeConfig: {
+                    format: 'yyyy-MM-DD HH:mm',
+                    useCurrent: true,
+                    minDate: new Date(new Date().setDate(new Date().getDate() + 3)),
+                },
+                dateConfig: {
+                    format: 'yyyy-MM-DD',
+                    useCurrent: true,
+                    minDate: new Date(),
+                }
+            }
+        },
+        mounted() {
+            this.$repositories.cart.getDeliveryTypes().then(res => {
+                this.deliveries = res.data;
+                this.deliveries[2].delivery_address = "2 Lover's Lane, Paget";
+            }).catch(err => {
+                console.log(err);
+            });
+        },
+        methods: {
+            selectDelivery(delivery) {
+                this.$store.dispatch('cart/addToCart', {
+                    product: delivery,
+                    key: 'delivery',
+                    price: delivery.price,
+                }).then(() => {}).catch(err => {
+                    console.log(err);
+
+                });
+            },
+            deliveryAddress(d, value) {
+                d.delivery_address = ''
+            },
+            nextStep() {
+                this.$store.dispatch('cart/updateStep', {
+                    step: 4,
+                }).then(() => {
+                    this.$router.replace('/checkout/scooter-protection');
+                }).catch(err => {
+                    console.log(err);
+                });
+            }
+        }
+    }
+
+</script>

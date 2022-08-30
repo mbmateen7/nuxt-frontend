@@ -1,0 +1,829 @@
+.banner-scooter {
+    background: url('/banner.jpg');
+    height: 81rem;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+    @include large-1600 {
+        height: 65rem;
+    }
+
+    // @include large-1600 {
+    //     height: 94rem;
+    // }
+    @include m-575 {
+        height: 83rem;
+    }
+
+    @include m-563 {
+        height: 110rem;
+    }
+
+    @include m-425 {
+        height: 100rem;
+    }
+}
+
+.baaner-main-box {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 0 0rem;
+
+    .heading-baaner {
+        font-size: 5.9rem;
+        color: $primary;
+        font-weight: 700;
+        text-shadow: 0px 0px 2px #00000029;
+
+        @include large-1600 {
+            font-size: 4.9rem;
+        }
+
+        @include m-425 {
+            font-size: 3.5rem;
+        }
+
+        span {
+            font-size: 8.5rem;
+            color: $button-color;
+
+            @include large-1600 {
+                font-size: 7rem;
+            }
+
+            @include m-425 {
+                font-size: 4rem;
+            }
+        }
+    }
+}
+
+.img-rating {
+    width: 39.9rem;
+    height: 20.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+
+    // background: $body-color;
+    @include large-1600 {
+        min-width: 39.9rem;
+        height: 20.2rem;
+        min-height: 20.2rem;
+    }
+
+    @include medium-991 {
+        min-width: 30rem;
+        height: 14rem;
+        min-height: 14rem;
+    }
+
+    @include m-575 {
+        width: 30rem;
+        min-width: 30rem;
+    }
+
+    @include m-425 {
+        margin-top: 0;
+        width: 38rem;
+        min-width: unset;
+        height: 19rem;
+        min-height: unset;
+        margin-bottom: 0rem;
+        order: 2;
+        margin-top: 2rem;
+    }
+}
+
+.img-scooter {
+    width: 68rem;
+    height: 58rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    // background: $body-color;
+    @include large-1600 {
+        width: 48rem;
+        height: 38rem;
+    }
+
+    @include m-575 {
+        width: 42rem;
+        height: 33rem;
+    }
+
+    @include m-425 {
+        order: 1;
+    }
+}
+
+.banner-info-box {
+    margin-top: 8rem;
+    height: 48rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+
+    .baaner-info-text {
+        font-size: 4rem;
+        color: $primary;
+        font-weight: 300;
+
+        @include large-1600 {
+            font-size: 3.3rem;
+        }
+
+        @include m-425 {
+            font-size: 3.5rem;
+            text-align: center;
+        }
+
+        span {
+            color: $button-color;
+            font-weight: 700;
+        }
+    }
+
+    @include large-1600 {
+        height: auto;
+        width: 38rem;
+        margin-top: 5rem;
+    }
+
+    @include medium-991 {
+        width: 27rem;
+    }
+
+    @include m-575 {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    @include m-425 {
+        margin-top: 1rem;
+        order: 3;
+    }
+}
+
+.best-of {
+    width: 62.9rem;
+    height: 26.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include large-1600 {
+        width: 39.9rem;
+        height: 16.1rem;
+    }
+
+    @include medium-991 {
+        width: 28rem;
+        height: 12rem;
+    }
+
+    @include m-575 {
+        width: 40rem;
+        height: 16rem;
+    }
+}
+
+.baaner-flex {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 0 15px;
+    width: 160rem;
+    margin: 0 auto;
+
+    @include large-1600 {
+        width: 100%;
+        margin: 3rem 0 0;
+    }
+
+    @include m-575 {
+        flex-wrap: wrap;
+    }
+
+    @include m-563 {
+        justify-content: center;
+    }
+
+    @include m-425 {
+        justify-content: center;
+    }
+}
+
+.find-bike {
+    padding: 4.5rem 0 1.5rem;
+}
+
+.find-card {
+    width: 43.7rem;
+    min-width: 43.7rem;
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 1.5rem;
+    margin: 3rem 1.5rem 1.5rem;
+
+    @include large-1600 {
+        width: 37rem;
+        min-width: 37rem;
+    }
+
+    @include large-1290 {
+        width: 34rem;
+        min-width: 34rem;
+    }
+
+    @include medium-991 {
+        width: 28rem;
+        min-width: 28rem;
+    }
+
+    @include m-425 {
+        width: 100%;
+        min-width: unset;
+    }
+
+    &.center-card {
+        width: 55.5rem;
+        min-width: 55.5rem;
+
+        @include large-1600 {
+            width: 49rem;
+            min-width: 49rem;
+        }
+
+        @include medium-991 {
+            width: 30rem;
+            min-width: 30rem;
+        }
+
+        @include m-425 {
+            width: 100%;
+            min-width: unset;
+        }
+
+        .rent-btn:hover {
+            background-color: $button-color;
+        }
+    }
+
+    .card-banner-img {
+        background: url('/find-baaner.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 43.7rem;
+        height: 52.7rem;
+        border-radius: 1.5rem;
+        overflow: hidden;
+        position: relative;
+        transition: ease-in-out .6s;
+        margin: 0 auto;
+
+        @include large-1600 {
+            width: 37rem;
+            min-width: 37rem;
+            height: 48rem;
+        }
+
+        @include large-1290 {
+            width: 34rem;
+            min-width: 34rem;
+        }
+
+        @include medium-991 {
+            width: 28rem;
+            min-width: 28rem;
+            height: 46rem;
+        }
+
+        @include m-425 {
+            width: 100%;
+            min-width: unset;
+            height: 50rem;
+        }
+
+        &:hover {
+            // transform: scale(1.1);
+            transition: ease-in-out .6s;
+
+            .find-bike-img {
+                transform: scaleX(-1.1) scaleY(1.1);
+                transition: ease-in-out .6s;
+
+                @include small-767 {
+                    transform: translateX(-50%) scale(1);
+                }
+            }
+
+            .find-bike-img.center {
+                transform: translateX(-50%) scale(1.1);
+                transition: ease-in-out .6s;
+
+                @include small-767 {
+                    transform: translateX(-50%) scale(1);
+                }
+            }
+        }
+
+        &.card-banner-img-center {
+            width: 55.5rem;
+            background: url("/find-banner-2.png") center no-repeat;
+
+            @include large-1600 {
+                width: 49rem;
+                min-width: 49rem;
+            }
+
+            @include medium-991 {
+                width: 30rem;
+                min-width: 30rem;
+            }
+
+            @include m-425 {
+                width: 100%;
+                min-width: unset;
+            }
+
+            .find-info-box {
+                .rext-info {
+                    color: $white;
+                }
+
+                .text-find {
+                    color: $white;
+                }
+            }
+        }
+
+        &.right-side-img {
+            background: url("/find-banner-3.png") center no-repeat;
+        }
+
+        .find-info-box {
+            padding: 2rem 1.6rem 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            .rext-info {
+                font-size: 2.5rem;
+                font-weight: 500;
+                color: $white;
+                margin-bottom: 1rem;
+                text-align: center;
+
+                @include m-425 {
+                    font-size: 2.7rem;
+                }
+            }
+
+            .text-find {
+                color: $white;
+                font-size: 1.6rem;
+                font-weight: 400;
+                margin-bottom: 1rem;
+                text-align: center;
+
+                @include m-425 {
+                    font-size: 1.8rem;
+                }
+            }
+        }
+
+        .find-bike-img {
+            width: 48.5rem;
+            height: 39.4rem;
+            // width: 51.5rem;
+            // height: 39.4rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            left: -16%;
+            bottom: -4rem;
+            transition: ease-in-out .6s;
+            transform: scaleX(-1);
+
+            @include large-1600 {
+                width: 41rem;
+                height: 32rem;
+            }
+
+            @include medium-991 {
+                width: 31rem;
+                height: 30rem;
+            }
+
+            @include m-575 {
+                width: 32rem;
+                height: 26rem;
+            }
+
+            @include m-425 {
+                width: 38rem;
+                height: 30rem;
+                left: 50%;
+                bottom: -1rem;
+                transform: translateX(-50%);
+            }
+
+            &.right-side {
+                width: 48.7rem;
+                height: 39.9rem;
+                right: -25%;
+                left: auto;
+                bottom: -3rem;
+                transform: scaleX(-1);
+
+                &:hover {
+                    transform: scaleX(-1.1) scaleY(1.1);
+                }
+
+                @include large-1600 {
+                    width: 41rem;
+                    height: 32rem;
+                }
+
+                @include medium-991 {
+                    width: 31rem;
+                    height: 27rem;
+                }
+
+                @include m-425 {
+                    width: 37rem;
+                    height: 29rem;
+                    right: 50%;
+                    bottom: 0rem;
+                    left: auto;
+                    transform: translateX(50%);
+                }
+            }
+
+            &.center {
+                // width: 24.6rem;
+                // height: 42.4rem;
+                width: 38.6rem;
+                height: 49.4rem;
+                left: 50%;
+                right: auto;
+                bottom: -7rem;
+                transform: translateX(-50%);
+
+                @include large-1600 {
+                    height: 32rem;
+                    bottom: -5rem;
+                    //                 height: 33rem;
+                    // width: 29.6rem;
+                    // bottom: -1rem;
+                }
+
+                @include medium-991 {
+                    height: 28rem;
+                    bottom: -1rem;
+                    width: 26rem;
+                }
+
+                @include m-425 {
+                    height: 29rem;
+                    bottom: 0rem;
+                    width: 29rem;
+                }
+            }
+        }
+    }
+}
+
+.find-flex-card {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0;
+    width: 152rem;
+    margin: 0 auto;
+
+    @include large-1600 {
+        width: 100%;
+        justify-content: center;
+    }
+
+    @include m-575 {
+        flex-wrap: wrap;
+    }
+}
+
+.brands {
+    padding: 1.5rem 0 4.5rem;
+}
+
+.brands-cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    width: 152rem;
+    margin: 3rem auto 0;
+
+    @include large-1600 {
+        width: 100%;
+    }
+
+    @include small-767 {
+        margin-top: 0;
+    }
+
+    @include large-1199 {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    @include medium-991 {
+        justify-content: center;
+    }
+}
+
+.category-slider {
+    padding: 0;
+    width: 152rem;
+    margin: 3rem auto 0;
+    display: none !important;
+
+    @include large-1600 {
+        width: 100%;
+    }
+
+    @include medium-991 {
+        display: block !important;
+    }
+
+    .brand-cardhover {}
+}
+
+.brand-cardhover {
+    // width: 25.8rem;
+    width: 22.3rem;
+    display: inline-block;
+    margin: 0 1.5rem 3rem;
+    overflow: hidden;
+
+    @include large-1290 {
+        width: 22.8rem;
+    }
+
+    @include large-1199 {
+        width: 25.8rem;
+    }
+
+    @include medium-991 {
+        display: none;
+    }
+
+    @include m-425 {
+        width: 25.1rem;
+    }
+
+    @include m-414 {
+        width: 24.4rem;
+    }
+
+    @include m-375 {
+        width: 21.5rem;
+    }
+
+    &:hover {
+        transition: ease-in-out .4s;
+
+        .brand-card .brand-card-img {
+            img {
+                transform: scale(1.2);
+                transition: ease-in-out .4s;
+            }
+        }
+    }
+}
+
+.category-slider {
+    .brand-cardhover {
+        width: unset;
+        margin: 3rem auto;
+    }
+
+    .brand-card {
+        margin: 1rem 1.5rem;
+        width: auto;
+    }
+}
+
+.brand-card {
+    width: 100%;
+    height: 28.7rem;
+    background: $white;
+    border-radius: 1rem;
+    box-shadow: 0 0 8px #0B4AA633;
+    padding: 2.5rem 1.8rem;
+
+    @include large-1290 {
+        height: auto;
+    }
+
+    .brand-card-img {
+        width: 18.3rem;
+        min-width: 18.3rem;
+        height: 14.6rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 1rem auto 5rem;
+
+        // overflow: hidden;
+        @include large-1370 {
+            width: 16.3rem;
+            min-width: 16.3rem;
+            height: 13.6rem;
+        }
+
+        @include large-1290 {
+            width: 14rem;
+            min-width: 14rem;
+            height: 11.3rem;
+            margin-bottom: 2rem;
+        }
+
+        @include large-1199 {
+            width: 16rem;
+            min-width: 16rem;
+            height: 15rem;
+        }
+
+        // @include large-1199 {
+        //     width: 14rem;
+        //     min-width: unset;
+        //     height: 14rem;
+        // }
+        img {
+            // transform: scale(1rem);
+            transition: ease-in-out .4s;
+            max-height: 100%;
+        }
+    }
+
+    .brand-heading {
+        .brand-text {
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: 400;
+            color: $black;
+            margin-bottom: 0;
+        }
+    }
+}
+
+.stocks-section {
+    padding: 0rem 0 4.5rem;
+}
+
+.stockes-cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    width: 152rem;
+    margin: 3rem auto 0;
+    flex-wrap: wrap;
+
+    @include large-1600 {
+        width: 100%;
+    }
+
+    // @include large-1199 {
+    //     justify-content: space-between;
+    //     // flex-wrap: wrap;
+    // }
+    // @include medium-991 {
+    //     justify-content: center;
+    //     flex-wrap: wrap;
+    // }
+    .card-accessories-main.card-product {
+        width: 26rem;
+        min-width: 26rem;
+
+        @include m-425 {
+            width: 46%;
+            min-width: unset;
+            margin: 0 7px 3rem;
+        }
+
+        @include m-414 {
+            // width: 25.3rem;
+        }
+    }
+
+    .card-accessories-main.card-product .heading-product-secondary {
+        @include m-425 {
+            font-size: 1.4rem;
+        }
+    }
+
+    .card-accessories-main.card-product .helmet-card-body .totatl-accessories .discount-p {
+        @include m-375 {
+            font-size: 1.4rem;
+        }
+    }
+
+    .card-accessories-main.card-product .helmet-card-body .totatl-accessories .toatl-price-acc {
+        @include m-425 {
+            font-size: 1.4rem;
+        }
+    }
+
+    .card-accessories-main.card-product .helmet-img {
+        @include m-375 {
+            width: 22rem;
+            height: 14rem;
+        }
+    }
+
+    .label-product {
+        font-size: 10px;
+        min-width: 13rem;
+        height: 3.5rem;
+    }
+}
+
+@media (max-width: 380px) {
+    .stockes-cards .card-accessories-main.card-product {
+        width: 44%;
+    }
+
+    .stockes-cards .card-accessories-main.card-product.card-product-home .helmet-img {
+        width: 21rem !important;
+        height: 14rem !important;
+    }
+}
+
+.shine-upper .img-shine {
+    min-width: 3rem;
+}
+
+.bike-find-text-box {
+    min-height: 5.8rem;
+    overflow: hidden;
+
+    @include large-1290 {
+        min-height: 8.2rem;
+    }
+}
+
+.card-accessories-main.card-product.card-product-home {
+    @include m-575 {
+        .outer-line {
+            width: 18px;
+            height: 18px;
+            min-width: 18px;
+        }
+
+        .outer-line .inner-background {
+            width: 10px;
+            height: 10px;
+        }
+    }
+}
+
+.card-accessories-main.card-product.bullets-size,
+.card-helmet.bullets-size {
+    @include m-575 {
+        .outer-line {
+            width: 18px;
+            height: 18px;
+            min-width: 18px;
+        }
+
+        .outer-line .inner-background {
+            width: 10px;
+            height: 10px;
+        }
+    }
+}
+
+.find-card .card-banner-img .find-info-box .text-find.black-color-ctm {
+    color: $black;
+}
+
+.find-card .card-banner-img .find-info-box .rext-info.black-color-ctm {
+    color: $black;
+    font-weight: 600;
+}

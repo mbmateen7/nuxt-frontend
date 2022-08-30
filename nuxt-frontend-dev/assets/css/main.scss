@@ -1,0 +1,129 @@
+@import "responsive";
+html {
+    font-size: 10px;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    @include large-1199 {
+        font-size: 8px;
+    }
+    @include small-767 {
+        font-size: 7px;
+    }
+    @include m-375 {
+        font-size: 6px;
+    }
+    @include m-325 {
+        font-size: 5px;
+    }
+}
+
+body {
+    // font-family: "segoeui";
+    font-family: 'Roboto', sans-serif !important;
+    color: #777 !important;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+p,
+label,
+address {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+    &:focus {
+        outline: none;
+    }
+    &:hover {
+        text-decoration: none !important;
+    }
+}
+
+button {
+    outline: none !important;
+    &:focus {
+        outline: none !important;
+    }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&display=swap');
+@import "variable";
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "fonts";
+@import "margin-padding";
+@import "header";
+@import "login-body";
+@import "input";
+@import "button";
+@import "choose-color";
+@import "personal-detail";
+@import "delivery-pick-up";
+@import "warrenty";
+@import "Membership";
+@import "rustproofing-page";
+@import "Accessories";
+@import "Insurance";
+@import "drivers-license";
+@import "image-upload";
+@import "thank-you";
+@import "check-out";
+@import "contact-us";
+@import "footer";
+@import "product-detail";
+@import "instock";
+@import "breadcrumb/next-banner";
+@import "index";
+@import "services";
+@import "check-out-updated";
+@import "sell";
+@import "security";
+// @import "rating";
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1170px !important;
+    }
+}
+
+@media (min-width: 1650px) {
+    // .container-fluid {
+    //     max-width: 1500px !important;
+    // }
+}
+
+// .rtl {
+//     direction: rtl;
+//     text-align: right;
+// }
+.pad-y {
+    padding-top: 9.4rem;
+    padding-bottom: 9.4rem;
+}
+
+.pad-t {
+    padding-top: 9.4rem;
+}
+
+.pad-b {
+    padding-bottom: 9.4rem;
+}
+
+svg {
+    overflow: unset !important;
+    height: 100%;
+}
+
+@import "custom.scss";

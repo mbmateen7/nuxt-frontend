@@ -1,0 +1,185 @@
+.rust-proofing {
+    padding: 6rem 0 6rem;
+
+    @include small-767 {
+        padding: 6rem 0 6rem;
+    }
+}
+
+.rust-box {
+    width: 89.7rem;
+    padding: 3rem 6rem 2.5rem;
+    background: $white;
+    border-radius: 2.8rem;
+    border: 1px solid transparent;
+    position: relative;
+
+    @include medium-991 {
+        width: 100%;
+    }
+
+    @include small-767 {
+        padding: 2rem 6rem 2rem;
+    }
+
+    &.active {
+        border-color: $button-color;
+
+        .top-Recommended {
+            display: flex;
+        }
+    }
+
+    .top-Recommended {
+        position: absolute;
+        top: -3rem;
+        transform: translateX(-50%);
+        left: 50%;
+        background-color: #FBB343;
+        border-top-left-radius: 1.4rem;
+        border-top-right-radius: 1.4rem;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.6rem;
+        font-weight: 700;
+        color: #fff;
+        width: 15.4rem;
+        height: 3rem;
+    }
+
+    .rust-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        .rust-p {
+            font-size: 1.6rem;
+            color: $label;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .img-rust {
+            width: 22.2rem;
+            height: 5.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.3rem;
+        }
+
+        .rust-para {
+            text-align: left;
+
+            .para-rust-t {
+                font-size: 1.8rem;
+                color: $text-70;
+                font-weight: 400;
+            }
+        }
+
+        .rust-reword {
+            font-size: 1.4rem;
+            color: $label;
+            font-weight: 700;
+            margin: 2rem 0;
+
+            @include small-767 {
+                margin: 1rem 0;
+            }
+        }
+
+        .hr-line {
+            width: 80%;
+            margin: 1.6rem 0;
+            border-top: 1px solid $text-70;
+            opacity: 32%;
+        }
+    }
+
+    .total-rust {
+        text-align: center;
+
+        .rust-total {
+            font-size: 13px;
+            color: $text-70;
+        }
+    }
+
+    .rust-save {
+        font-size: 1.8rem;
+        color: $primary;
+        font-weight: 700;
+        margin-bottom: 1.6rem;
+
+        span {
+            color: $button-color;
+            padding-left: 1.6rem;
+        }
+    }
+
+    .rust-btns {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .rust-skip {
+            font-size: 1.8rem;
+            color: $primary;
+            font-weight: 700;
+            margin-left: 2rem;
+            text-decoration: underline;
+
+            &:hover {
+                color: $button-color;
+            }
+        }
+    }
+}
+
+.rust-btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .rust-skip {
+        font-size: 1.8rem;
+        color: $primary;
+        font-weight: 700;
+        margin-left: 2rem;
+        text-decoration: underline;
+
+        &:hover {
+            color: $button-color;
+        }
+    }
+}
+
+.rust-moblie-heigt {
+    @include small-767 {
+        height: 55rem;
+        overflow-y: auto;
+        padding: 3rem 1rem 0;
+    }
+
+    &::-webkit-scrollbar {
+        width: 3px;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+        background: #ccc;
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+        background: $primary;
+    }
+
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+        background: $primary;
+    }
+}

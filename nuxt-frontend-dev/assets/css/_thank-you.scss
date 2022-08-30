@@ -1,0 +1,46 @@
+.goto-btn-box {
+    position: absolute;
+    right: 4rem;
+    bottom: 4rem;
+}
+
+.goto-btn {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: $white;
+    width: 19.7rem;
+    height: 5.2rem;
+    border-radius: 1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $primary;
+    &:hover {
+        background: $button-color;
+        transition: ease-in-out .3s;
+        color: $white;
+    }
+}
+
+.thank-heading {
+    font-size: 3.9rem;
+    color: $primary;
+    font-weight: 700;
+    margin-bottom: 3.5rem;
+}
+
+.thank-text {
+    font-weight: 400;
+    font-size: 12px;
+    color: $primary;
+    text-align: center;
+    @include small-767 {
+        text-align: justify;
+    }
+}
+
+.thank-text-box {
+    @include small-767 {
+        margin-bottom: 10rem;
+    }
+}

@@ -1,0 +1,669 @@
+.sell-page {
+    padding: 4.5rem 0 0rem;
+}
+
+.sell-flex {
+    display: flex;
+    align-items: center;
+    @include small-767 {
+        flex-direction: column;
+    }
+}
+
+.left-sell {
+    margin-right: 3rem;
+    width: 100%;
+    @include medium-991 {
+        margin-right: 2rem;
+    }
+    @include small-767 {
+        margin-right: 0rem;
+    }
+    .sell-main-heading {
+        font-size: 3.2rem;
+        font-weight: 700;
+        margin: 0 0 .75rem;
+        color: $secondary-heading;
+        @include medium-991 {
+            font-size: 2.5rem;
+        }
+        @include small-767 {
+            font-size: 3.2rem;
+            margin: 0 0 1.2rem;
+        }
+    }
+    .sell-secondary {
+        font-size: 2rem;
+        font-weight: 500;
+        margin: 0 0 2rem;
+        color: $text-7;
+    }
+    .sell-list {
+        margin-bottom: 0;
+        .fa-check-circle {
+            color: #1cd089;
+            font-size: 2.4rem;
+            margin-right: 1rem;
+        }
+        .sell-items {
+            font-size: 1.6rem;
+            color: $text-70;
+            font-weight: 400;
+            margin-bottom: 1.6rem;
+            display: flex;
+            align-items: center;
+        }
+    }
+}
+
+.sell-img {
+    width: 47.2rem;
+    min-width: 47.2rem;
+    height: 39.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    @include medium-991 {
+        width: 37.2rem;
+        min-width: 37.2rem;
+        height: 31.9rem;
+    }
+    @include small-767 {
+        margin-top: 3rem;
+        width: 100%;
+        min-width: 100%;
+        height: 39.9rem;
+    }
+}
+
+.used-bike {
+    width: 100%;
+    .left-sell .sell-main-heading {
+        text-align: center;
+    }
+    .left-sell .sell-list .sell-items {
+        color: $secondary-heading;
+        margin-bottom: .5rem;
+    }
+    .left-sell .sell-list .sell-items-2 i {
+        width: 2.4rem;
+        height: 2.4rem;
+        min-width: 2.4rem;
+        margin-right: 1rem;
+        display: inline-block;
+    }
+    .left-sell .sell-list .sell-items-2 {
+        font-size: 1.6rem;
+        color: #707070;
+        font-weight: 400;
+        margin-bottom: 1.6rem;
+        display: flex;
+        align-items: center;
+    }
+}
+
+.banner-used-bike {
+    width: 100%;
+    background: url("/banner-used-bike.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 71.5rem;
+    padding: 8rem 0rem 4.5rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    @include large-1800 {
+        padding: 8rem 0rem 4.5rem;
+    }
+    @include large-1440 {
+        padding: 8rem 0rem 4.5rem;
+        height: unset;
+    }
+    @include medium-991 {
+        padding: 8rem 0rem 4.5rem;
+    }
+}
+
+.left-used-bike {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    .used-bike-heading {
+        font-size: 5rem;
+        font-weight: 700;
+        color: $white;
+        margin-bottom: 3rem;
+        text-shadow: 0 3px 10px #00000066;
+        span {
+            color: #FBB343;
+        }
+        @include large-1440 {
+            font-size: 4rem;
+        }
+        @include large-1290 {
+            font-size: 3.7rem;
+        }
+        br {
+            @include medium-991 {
+                display: none;
+            }
+        }
+    }
+    .used-bike-left-text {
+        font-size: 2.5rem;
+        font-weight: 500;
+        color: $white;
+        margin-bottom: 0rem;
+        text-shadow: 0 3px 10px #00000066;
+    }
+}
+
+.used-bike-banner-img {
+    width: 88.3rem;
+    height: 59rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include large-1800 {
+        width: 100%;
+    }
+    @include large-1440 {
+        height: 46.5rem;
+    }
+    @include large-1370 {
+        height: unset;
+    }
+    @include small-767 {
+        margin-top: 4.5rem;
+    }
+}
+
+.used-bike-cards {
+    width: 100%;
+    padding: 0rem 0rem 2rem;
+    @include large-1800 {
+        padding: 8rem 0rem 2rem;
+    }
+    @include large-1440 {
+        padding: 0rem 0rem 2rem;
+    }
+    @include medium-991 {
+        padding: 0rem 0rem 2rem;
+    }
+}
+
+.cards-used-bike {
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 2.5rem;
+    &:hover {
+        transition: ease-in-out .5s;
+        .cards-main-used-bike .card-bodr-used-bike {
+            background: $primary;
+            transition: ease-in-out .5s;
+        }
+        .cards-main-used-bike .card-bodr-used-bike .card-used-bike-h {
+            color: $white;
+        }
+        .cards-main-used-bike .card-used-bike-p .para-text-bike {
+            color: $white;
+        }
+    }
+}
+
+.cards-main-used-bike {
+    width: 100%;
+    border-radius: 2rem;
+    border: 1px solid #0050AD;
+    overflow: hidden;
+    .card-used-img {
+        width: 100%;
+        height: 53.1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #eee;
+        @include large-1440 {
+            height: 41.1rem;
+        }
+        // @include large-1440 {
+        //     height: unset;
+        // }
+        @include medium-768{
+            height: 31.1rem;
+        }
+        @include small-767{
+            height: 74.1rem;
+        }
+        @include m-575{
+            height: 58.1rem;
+        }
+        img {
+            height: 100%;
+            width: 100%;
+            @include medium-768{
+                height: auto;
+                width: unset;
+            }
+            @include small-767{
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+            @include m-575{
+                height: 100%;
+                width: unset;
+                object-fit: cover;
+            }
+        }
+    }
+    .card-bodr-used-bike {
+        width: 100%;
+        padding: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        .card-used-bike-h {
+            font-size: 2.5rem;
+            width: 100%;
+            color: $black;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            text-align: center;
+            overflow: hidden;
+            -o-text-overflow: ellipsis;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            @include large-1440 {
+                font-size: 2rem;
+            }
+        }
+    }
+    .card-used-bike-p {
+        height: 5.4rem;
+        overflow: auto;
+        @include m-575{
+            height: unset;
+            overflow-y: visible;
+        }
+        &::-webkit-scrollbar {
+            width: 3px;
+        }
+        /* Track */
+        &::-webkit-scrollbar-track {
+            background: #ccc;
+        }
+        /* Handle */
+        &::-webkit-scrollbar-thumb {
+            background: $primary;
+        }
+        /* Handle on hover */
+        &::-webkit-scrollbar-thumb:hover {
+            background: $primary;
+        }
+        .para-text-bike {
+            font-size: 1.8rem;
+            color: $black;
+            font-weight: 400;
+            margin-bottom: 0rem;
+            text-align: center;
+            br {
+                @include large-1370 {
+                    display: none;
+                }
+            }
+            @include large-1440 {
+                font-size: 1.6rem;
+            }
+        }
+    }
+}
+
+.sell-main {
+    padding: 4.5rem 0 0rem;
+}
+
+.sell-banner {
+    width: 100%;
+    background: url("/banner-sell.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0rem 0rem 0rem;
+    margin-top: 3rem;
+    margin-bottom: 4.5rem;
+    overflow: hidden;
+}
+
+.left-sell-conttect {
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    .main-sell-headind-box {
+        margin-bottom: 3rem;
+        margin-top: 4.5rem;
+    }
+    .sellin-main-heading {
+        font-size: 5rem;
+        font-weight: 700;
+        color: $white;
+        position: relative;
+        display: inline-block;
+        z-index: 99;
+        @include large-1290 {
+            font-size: 4rem;
+        }
+        @include medium-991 {
+            font-size: 3.2rem;
+        }
+        @include small-767 {
+            display: table;
+            font-size: 4rem;
+            margin-bottom: 1rem;
+        }
+        &::after {
+            position: absolute;
+            width: 100%;
+            height: 1.8rem;
+            content: '';
+            display: inline-block;
+            background-color: #FBB343;
+            bottom: .8rem;
+            left: 0;
+            right: 0;
+            z-index: -1;
+            @include large-1290 {
+                height: 1.5rem;
+                bottom: .5rem;
+            }
+            @include medium-991 {
+                height: 1rem;
+                bottom: .3rem;
+            }
+        }
+    }
+}
+
+.used-bike-left-text {
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: $white;
+    margin-bottom: 0rem;
+    @include medium-991 {
+        font-size: 1.8rem;
+    }
+    // text-shadow: 0 3px 10px #00000066;
+}
+
+.sell-bike-banner-img {
+    width: 100%;
+    height: 71.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include large-1800 {
+        width: 100%;
+    }
+    @include large-1440 {
+        height: 46.5rem;
+    }
+    @include large-1370 {
+        height: unset;
+    }
+    @include small-767 {
+        margin-top: 4.5rem;
+        height: 76rem;
+    }
+    @include m-575 {
+        height: 56rem;
+    }
+    @include m-425 {
+        height: 41rem;
+    }
+}
+
+.sell-middle-section {
+    width: 100%;
+    padding: 0rem 0rem 0rem;
+    margin-bottom: 4.5rem;
+}
+
+.sell-middle-left {
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    @include medium-991{
+        align-items: center;
+        margin-bottom: 3rem;
+    }
+    .middle-sell-heading {
+        height: 8.8rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: .5rem 3rem;
+        background: $primary;
+        margin-bottom: 5px;
+        min-width: 32.8rem;
+
+        .get-sell {
+            font-size: 6rem;
+            color: $white;
+            font-weight: 700;
+            margin-bottom: 0;
+            display: inline-block;
+            width: 100%;
+            text-align: left;
+            white-space: nowrap;
+            @include large-1370{
+                font-size: 5rem;
+            }
+            @include large-1199 {
+                font-size: 5rem;
+            }
+            @include medium-991 {
+                font-size: 4.5rem;
+                text-align: center;
+            }
+        }
+    }
+}
+
+.height-img {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    @include medium-991{
+        height: unset;
+    }
+}
+
+.img-sell-money {
+    width: 100%;
+    height: 45rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 3px 6px;
+    overflow: hidden;
+    border-radius: 2rem;
+    margin: 3rem 0;
+    @include medium-991 {
+        height: 61rem;
+        margin: 0rem 0;
+    }
+    @include small-767 {
+        height: 59rem;
+    }
+    @include m-575 {
+        height: 94rem;
+        margin: 1rem 0 3rem;
+    }
+    @include m-425 {
+        height: 66rem;
+       
+    }
+    @include m-375 {
+        height: 67rem;
+    }
+    @include m-325 {
+        height: 69rem;
+    }
+    img {
+        // object-fit: cover;
+        // height: 100%;
+        @include large-1800{
+            height: 100%;
+            object-fit: cover;
+        }
+        @include medium-991{
+            height: auto;
+            object-fit: none;
+        }
+    }
+}
+
+.img-sell-money-2 {
+    width: 100%;
+    height: 61rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 3px 6px;
+    overflow: hidden;
+    border-radius: 2rem;
+    @include m-575 {
+        height: 92rem;
+    }
+    @include m-425 {
+        height: 66rem;
+    }
+    @include m-375 {
+        height: 67rem;
+    }
+    @include m-325 {
+        height: 69rem;
+    }
+    img {
+        object-fit: cover;
+        height: 100%;
+        @include medium-991{
+            object-fit: cover;
+            height: 100%;
+        }
+    }
+}
+
+.last-card-sell {
+    width: 100%;
+    background: url("/card-sell-banner.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0rem 0rem 0rem;
+    margin-bottom: 4.5rem;
+    overflow: hidden;
+    padding: 6.2rem 0rem;
+    @include medium-991 {
+        padding: 6.2rem 0rem 3.2rem;
+    }
+}
+
+.sell-card-main-box {
+    display: inline-block;
+    width: 100%;
+    @include medium-991 {
+        margin-bottom: 3rem;
+    }
+    &:hover {
+        .card-sell .card-sell-body {
+            background: $label;
+            transition: ease-in-out .3s;
+        }
+        .card-sell .card-sell-body .last-card-body-heading {
+            color: $white;
+        }
+    }
+    .card-sell {
+        width: 100%;
+        border-radius: 2rem;
+        overflow: hidden;
+        .last-card-sell-img {
+            width: 100%;
+            height: 57rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #eee;
+            @include m-575 {
+                height: 86rem;
+            }
+            @include m-425 {
+                height: 61rem;
+            }
+            @include m-375 {
+                height: 62rem;
+            }
+            @include m-325 {
+                height: 63rem;
+            }
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+        .card-sell-body {
+            width: 100%;
+            padding: 3.5rem 1.6rem;
+            background: $white;
+            .last-card-body-heading {
+                font-size: 2.2rem;
+                width: 100%;
+                color: $black;
+                font-weight: 700;
+                margin-bottom: 0rem;
+                text-align: center;
+                overflow: hidden;
+                -o-text-overflow: ellipsis;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                @include large-1440 {
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+}
+
+.sell-banner .container-fluid,
+.sell-middle-section .container-fluid,
+.last-card-sell .container-fluid {
+    max-width: 1680px;
+    margin: 0 auto;
+    @media (min-width: 1600px) {}
+}
+
+.banner-used-bike .container-fluid,
+.used-bike-cards .container-fluid {
+    max-width: 1564px;
+    margin: 0 auto;
+}
+
+@media (max-width: 900px){
+    .img-sell-money img{
+        height: 100%;
+   
+        object-fit: cover;
+    }
+   
+}

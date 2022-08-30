@@ -1,0 +1,219 @@
+.footer-main {
+    background: $primary;
+    width: 100%;
+    padding: 4rem 0 0;
+
+    @include medium-991 {
+        padding-top: 5.5rem;
+    }
+}
+
+.footer-left {
+    .footer-logo {
+        // width: 35.5rem;
+        // height: 6.2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @include m-414 {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .social-icons-list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 2rem auto;
+        width: 100%;
+
+        @include m-575 {
+            justify-content: center;
+        }
+
+        @include m-414 {
+            justify-content: center;
+        }
+
+        .facebook-box {
+            margin-right: 2rem;
+
+            // width: 4rem;
+            // display: flex;
+            // align-items: center;
+            // justify-content: center;
+            // border-radius: 3px;
+            // background: $button-color;
+            // height: 4rem;
+            &:hover {
+                // background: $white;
+                cursor: pointer;
+
+                i {
+                    color: $button-color;
+                    transition: ease-in-out .3s;
+                }
+            }
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+
+        .social-link {
+            &:hover {
+                i {
+                    color: $button-color;
+                    transition: ease-in-out .3s;
+                }
+            }
+
+            i {
+                font-size: 3.5rem;
+                color: $white;
+            }
+        }
+    }
+
+    .rating-img {
+        // width: 37.9rem;
+        // height: 7.2rem;
+        // width: 27rem;
+        // height: 5.2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @include m-575 {
+            margin-bottom: 5.5rem;
+        }
+
+        @include m-414 {
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+
+.address-footer-box {
+    .adress-footer-heading {
+        font-size: 2rem;
+        font-weight: 500;
+        color: $white;
+        margin-bottom: 2rem;
+        margin-left: 3.7rem;
+
+        @include large-1600 {
+            font-size: 1.8rem;
+        }
+
+        @include small-767 {
+            margin-bottom: 1.6rem;
+        }
+    }
+
+    .address-footer-loc {
+        .loc-address-1 {
+            display: flex;
+            align-items: center;
+            margin-bottom: 2rem;
+
+            @include small-767 {
+                margin-bottom: 1.6rem;
+            }
+
+            &:hover {
+                transition: ease-in-out .4s;
+
+                svg {
+                    path {
+                        fill: $button-color;
+                    }
+                }
+
+                .loc-text {
+                    color: $button-color;
+                }
+            }
+
+            &.location:hover {
+                transition: ease-in-out .4s;
+
+                svg {
+                    path {
+                        fill: $white;
+                    }
+                }
+
+                .loc-text {
+                    color: $white;
+                }
+            }
+
+            svg {
+                width: 1.8rem;
+                min-width: 1.8rem;
+                height: 1.8rem;
+                color: $white;
+                // transform: translateY(-4px);
+            }
+
+            .loc-text {
+                font-size: 1.7rem;
+                font-weight: 400;
+                color: $white;
+                margin-left: 1.6rem;
+                margin-bottom: 0;
+
+                @include large-1600 {
+                    font-size: 1.6rem;
+                }
+            }
+        }
+    }
+}
+
+.footer-line {
+    margin-top: 1.6rem;
+    width: 100%;
+    border-top: 2px solid $white;
+    margin-bottom: 0;
+}
+
+.footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 0;
+
+    .copy-right {
+        font-size: 1.5rem;
+        color: $white;
+        font-weight: 400;
+        margin-bottom: 0;
+
+        a {
+            color: $white;
+
+            &:hover {
+                color: $button-color;
+            }
+        }
+    }
+}
+
+.for-responsive-footer {
+    @include medium-991 {
+        margin-top: 4rem;
+    }
+}
+
+.address-footer-box.for-responsive-footer {
+    margin-left: 6.2rem;
+
+    @include medium-991 {
+        margin-left: 0;
+    }
+}

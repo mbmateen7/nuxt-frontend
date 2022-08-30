@@ -1,0 +1,289 @@
+.services-main {
+    padding: 4.5rem 0 7rem;
+    @include m-425 {
+        padding: 4.5rem 0 1rem;
+    }
+}
+
+.basic-services {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 3rem;
+    &:hover {
+        .services-card {
+            transition: ease-in-out .3s;
+            background: $primary;
+            .services-haeding {
+                color: $white;
+            }
+            .services-text {
+                color: $white;
+            }
+            .seting-img-services {
+                svg {
+                    height: 100%;
+                    path {
+                        // fill: $white;
+                        stroke: $white;
+                    }
+                }
+            }
+        }
+    }
+    .services-card {
+        width: 100%;
+        border-radius: 1rem;
+        background: $white;
+        box-shadow: 0 0 20px #00000029;
+        border: 2px solid #0B4AA600;
+        padding: 4rem 2rem 3.5rem;
+        .services-haeding {
+            font-size: 4rem;
+            color: $primary;
+            font-weight: 500;
+            margin-bottom: 3rem;
+            text-align: center;
+            @include medium-991 {
+                font-size: 3rem;
+            }
+        }
+        .services-text {
+            font-size: 2rem;
+            color: #7F7F7F;
+            font-weight: 500;
+            text-align: center;
+            margin-bottom: 0;
+        }
+        .seting-img-services {
+            width: 8.5rem;
+            height: 8.5rem;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 3rem auto 0;
+        }
+    }
+}
+
+.mb-100-ctm {
+    margin-bottom: 10rem;
+    @include m-425 {
+        margin-bottom: 4.5rem;
+    }
+}
+
+.services-inline-main {
+    padding: 10rem 0;
+    @include m-425 {
+        padding: 5rem 0 4rem;
+    }
+    // border-top: 5px solid #F6F6F6;
+    // box-shadow: 0px 5px 5px #8D8D8D45;
+}
+
+.services-box-main {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 10rem;
+    @include medium-991 {
+        flex-direction: column;
+    }
+    @include m-425 {
+        padding-bottom: 5rem;
+    }
+    .services-img-left {
+        width: 59rem;
+        min-width: 59rem;
+        height: 39rem;
+        border-radius: 4.4rem;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 3rem;
+        box-shadow: 0 0 20px #00000029;
+        @include medium-991 {
+            margin-bottom: 3rem;
+            margin-right: 0;
+        }
+        @include m-425 {
+            width: 100%;
+            min-width: 100%;
+            height: 100%;
+        }
+    }
+    .basic-engine-right {
+        width: 100%;
+        .engine-right {
+            font-size: 5.5rem;
+            color: $primary;
+            font-weight: 500;
+            margin-bottom: 1.6rem;
+        }
+        .services-right-text {
+            font-size: 2rem;
+            color: $black;
+            font-weight: 500;
+            margin-bottom: 0rem;
+        }
+    }
+}
+
+.line-box {
+    width: 100%;
+    height: 3px;
+    background: #F6F6F6;
+    box-shadow: 0px 5px 5px #8D8D8D45;
+}
+
+.proterty-card.vehicle-card .card-flex-vehicle .engine-right {
+    width: 4rem;
+    height: 4rem;
+    min-width: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.proterty-card {
+    &.vehicle-card {
+        .card-flex-vehicle {
+            border: 1px solid #D1D1D1;
+            border-radius: 5px;
+            padding: 1.5rem 1.6rem;
+        }
+    }
+    &.vehicle-card .card-flex-vehicle .flex-vehicle-left .vehilce-heading {
+        margin-bottom: 0;
+        font-size: 1.5rem;
+        font-weight: 500;
+        margin-right: 10px;
+        text-transform: lowercase;
+        &::first-letter {
+            // color: red;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.content-reverse.services-box-main {
+    .services-img-left {
+        margin-left: 3rem;
+        margin-right: 0;
+        @include medium-991 {
+            margin-top: 3rem;
+            margin-bottom: 0;
+            margin-left: 0;
+        }
+        @include m-425 {
+            order: 1;
+            margin-top: 0rem;
+            margin-bottom: 3rem;
+        }
+    }
+    .basic-engine-right {
+        @include m-425 {
+            order: 2;
+        }
+    }
+    // .basic-engine-right .engine-right {
+    //     text-align: right;
+    // }
+    // .basic-engine-right .services-right-text {
+    //     text-align: right;
+    // }
+}
+
+.services-warrenty {
+    padding-bottom: 10rem;
+    @include m-425 {
+        padding-bottom: 4.5rem;
+    }
+}
+
+.one-year {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5.5rem;
+    font-weight: 500;
+    color: $primary;
+    margin-bottom: 4rem;
+}
+
+.services-warrenty-text {
+    font-size: 2rem;
+    font-weight: 500;
+    color: $black;
+    margin-bottom: 0rem;
+}
+
+.center-para {
+    font-size: 2rem;
+    font-weight: 500;
+    color: $black;
+    text-align: center;
+    margin: 4rem 0 0;
+}
+
+.services-warrenty-detail {
+    background: $white;
+    border: 5px;
+    border: 1px solid #D1D1D1;
+    overflow: hidden;
+    margin-top: 4rem;
+}
+
+.services-items-list {
+    border-bottom: 1px solid #D1D1D1;
+    padding: 1.6rem;
+    display: flex;
+    align-items: center;
+    &:last-child {
+        border-bottom: none;
+    }
+}
+
+.left-services-warrenty {
+    width: 25%;
+    margin-right: 3rem;
+    min-width: 25%;
+    .s-warrenty-p {
+        font-size: 1.8rem;
+        font-weight: 500;
+        color: $black;
+        margin-bottom: 0rem;
+    }
+}
+
+.right-services-warrenty {
+    .s-warrenty-p {
+        font-size: 1.8rem;
+        font-weight: 500;
+        color: $black;
+        margin-bottom: 0rem;
+    }
+}
+
+.services-height-card-text {
+    height: 19rem;
+    overflow-y: auto;
+    &::-webkit-scrollbar {
+        width: 3px;
+    }
+    /* Track */
+    &::-webkit-scrollbar-track {
+        background: #ccc;
+    }
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+        background: $primary;
+    }
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+        background: $primary;
+    }
+}

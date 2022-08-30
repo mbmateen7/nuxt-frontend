@@ -1,0 +1,63 @@
+{
+    "beautify.language": {
+        "js": {
+            "type": [
+                "javascript",
+                "json",
+                "jsonc",
+                "dart"
+            ],
+            "filename": [
+                ".jshintrc",
+                ".jsbeautifyrc"
+            ]
+        },
+        "css": [
+            "css",
+            "less",
+            "scss"
+        ],
+        "html": [
+            "htm",
+            "html",
+            "vue"
+        ]
+    },
+    "html.format.wrapLineLength": 0,
+   
+    "editor.formatOnSave": true,
+    "explorer.confirmDelete": false,
+    "workbench.editorAssociations": {
+        "*.php": "default"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "HookyQR.beautify"
+    },
+   
+    "files.maxMemoryForLargeFilesMB": 8096,
+    "vetur.format.defaultFormatter.css": "none",
+    "editor.quickSuggestionsDelay": 0,
+    "search.exclude": {
+        "**/vendor": true
+    },
+    "diffEditor.ignoreTrimWhitespace": false,
+   
+    "[css]": {
+        "editor.defaultFormatter": "HookyQR.beautify"
+    },
+    "[scss]": {
+        "editor.defaultFormatter": "HookyQR.beautify"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "HookyQR.beautify"
+    },
+    "vetur.format.enable": false,
+    "[javascript]": {
+        "editor.defaultFormatter": "HookyQR.beautify"
+    },
+    "editor.smoothScrolling": true,
+    "editor.cursorSmoothCaretAnimation": true,
+    "workbench.list.smoothScrolling": true,
+    "debug.console.acceptSuggestionOnEnter": "on",
+    "vetur.format.defaultFormatter.html": "js-beautify-html",
+}

@@ -1,0 +1,91 @@
+.driver-upload {
+    width: 100%;
+    margin: 0 auto;
+    padding: 4rem 0 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    @include small-767 {
+        padding: 6rem 0 6rem;
+        margin-bottom: 6rem;
+        justify-content: flex-start;
+    }
+}
+
+
+/* input file style */
+
+.upload-box {
+    .img-upload {
+        width: 8.4rem;
+        height: 7.1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 2rem auto 2rem;
+    }
+
+    .custom-check input:checked~.checkmark {
+        background-color: $primary;
+    }
+
+    .custom-check {
+        padding-top: 0;
+    }
+
+    .custom-check .checkmark {
+        top: -2px;
+    }
+
+    .custom-check .checkmark:after {
+        left: 1rem;
+        top: 0.4rem;
+        width: 0.8rem;
+        height: 1.5rem;
+        border: solid #fff;
+        border-width: 0 2px 2px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+
+    .remember-me {
+        .prvc {
+            font-size: 1.6rem;
+            font-weight: 400;
+            color: $text-70;
+            padding-left: 4rem;
+            padding-top: 0.1rem;
+
+            a {
+                color: $primary;
+
+                &:hover {
+                    color: $button-color;
+                }
+            }
+
+            @include m-425 {
+                padding-top: 0;
+            }
+        }
+    }
+
+    .check-box-drivers {
+        margin-top: 5rem;
+
+        @include small-767 {
+            margin-top: 1rem;
+        }
+    }
+}
+
+.upload-sec {
+    display: flex;
+
+    @include small-767 {
+        flex-direction: column;
+    }
+}

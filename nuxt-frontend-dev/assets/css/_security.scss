@@ -1,0 +1,145 @@
+.security-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .pick-up-box {
+        margin: 0 0 3rem;
+        // min-height: 56.6rem;
+        // @include small-767 {
+        //     margin: 0;
+        // }
+    }
+
+    @include small-767 {
+        flex-direction: column;
+        height: 55rem;
+        overflow-y: auto;
+        justify-content: flex-start;
+        padding: 0 2rem;
+        margin-top: 2rem;
+    }
+
+    &::-webkit-scrollbar {
+        width: 3px;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+        background: #ccc;
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+        background: $primary;
+    }
+
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+        background: $primary;
+    }
+}
+
+.video-main {
+    width: 81.3rem;
+    min-width: 81.3rem;
+    height: 56.6rem;
+    border-radius: 2.8rem;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 3rem;
+
+    @include medium-991 {
+        width: 54.3rem;
+        min-width: 54.3rem;
+        height: 37.6rem;
+    }
+
+    @include small-767 {
+        width: 100%;
+        min-width: 100%;
+        height: 48.6rem;
+        margin-top: 1rem;
+        min-height: 48.6rem;
+    }
+
+    @include m-575 {
+        height: 51.6rem;
+        min-height: 51.6rem;
+    }
+
+    @include m-575 {
+        height: 36.6rem;
+        min-height: 36.6rem;
+    }
+
+    @include m-375 {
+        height: 37.6rem;
+        min-height: 37.6rem;
+    }
+
+    .play-circle {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 7.3rem;
+        height: 7.3rem;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        z-index: 99;
+
+        svg {
+            width: 7.3rem;
+            height: 7.3rem;
+        }
+    }
+
+    &:hover {
+        .play-circle {
+            box-shadow: 0 6px 30px #00000029;
+        }
+    }
+
+    .video-label {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.pick-up-box.pick-up-box-member .benefit-box {
+    overflow-y: auto;
+
+    &::-webkit-scrollbar {
+        width: 3px;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+        background: #ccc;
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+        background: $primary;
+    }
+
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+        background: $primary;
+    }
+}
+
+// .pick-up-box.pick-up-box-member {
+//     min-height: 56.6rem;
+// }
+.right-security-card .pick-up-box.pick-up-box-member .save-t {
+    margin-bottom: 6.5rem;
+}
+
+.security-main {
+    padding: 3rem 0 6rem;
+}

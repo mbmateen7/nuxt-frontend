@@ -1,0 +1,400 @@
+// .main-body {
+//     height: 88vh;
+// }
+.pick-up-section {
+    padding: 1rem 0 4rem;
+
+    @include small-767 {
+        padding: 2rem 0 2rem;
+    }
+}
+
+.delivery-cards-inline {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    @include small-767 {
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        width: 100%;
+        justify-content: flex-start;
+        height: 55rem;
+        overflow-y: auto;
+    }
+
+    &::-webkit-scrollbar {
+        width: 3px;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+        background: #ccc;
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+        background: $primary;
+    }
+
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+        background: $primary;
+    }
+}
+
+.warrenty-height-2 {
+    @include small-767 {
+        height: 60rem;
+        overflow-y: auto;
+        padding: 1rem 0 0;
+    }
+
+    &::-webkit-scrollbar {
+        width: 3px;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+        background: #ccc;
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+        background: $primary;
+    }
+
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+        background: $primary;
+    }
+}
+
+.warrenty-height {
+    @include small-767 {
+        height: 50rem;
+        overflow-y: auto;
+        padding: 1rem 0 0;
+    }
+
+    &::-webkit-scrollbar {
+        width: 3px;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+        background: #ccc;
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+        background: $primary;
+    }
+
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+        background: $primary;
+    }
+}
+
+.warrenty-height-3 {
+    @include small-767 {
+        height: 40rem;
+        overflow-y: auto;
+        padding: 1rem 0 0;
+    }
+
+    &::-webkit-scrollbar {
+        width: 3px;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+        background: #ccc;
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+        background: $primary;
+    }
+
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+        background: $primary;
+    }
+}
+
+.delivery-cards-inline-2 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    // flex-wrap: wrap;
+    overflow-x: auto;
+
+    @include small-767 {
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    &::-webkit-scrollbar {
+        width: 3px;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+        background: #ccc;
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+        background: $primary;
+    }
+
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+        background: $primary;
+    }
+}
+
+.pick-up-box.pick-up-box-site {
+    min-height: 56.4rem;
+    margin: 0rem 15px 3rem;
+    justify-content: flex-start;
+
+    @include small-767 {
+        max-height: 46.7rem;
+        margin: 0rem 15px 2rem;
+    }
+}
+
+.pick-up-box.pick-up-box-warrenty {
+    min-height: 60.4rem;
+    margin: 0rem 15px 3rem;
+
+    @include small-767 {
+        max-height: 46.7rem;
+        margin: 0rem 15px 2rem;
+    }
+}
+
+.pick-up-box {
+    width: 29.6rem;
+    min-width: 29.6rem;
+    padding: 2rem;
+    border-radius: 2.8rem;
+    background-color: $white;
+    margin: 3rem 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid transparent;
+
+    @include medium-991 {
+        width: 29.6rem;
+        min-width: 29.6rem;
+    }
+
+    @include small-767 {
+        margin: 0rem 15px 2rem;
+    }
+
+    &:hover,
+    &.selected {
+        // box-shadow: 3px 6px 24px $primary;
+        border: 1px solid $label;
+        cursor: pointer;
+    }
+
+    .pick-img {
+        width: 5.8rem;
+        height: 6.4rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        // background: #eee;
+        margin: 5px 0;
+    }
+
+    .basic {
+        font-size: 2.4rem;
+        color: $label;
+        font-weight: 700;
+        margin-bottom: 0;
+        text-align: center;
+        min-height: 6rem;
+    }
+
+    .deliver-by {
+        font-size: 1.6rem;
+        color: $black;
+        font-weight: 400;
+        margin-bottom: 3px;
+        text-align: center;
+    }
+
+    .deliver-by-2 {
+        font-size: 1.4rem;
+        color: $black;
+        font-weight: 400;
+        margin-bottom: 3px;
+        margin-bottom: 5px;
+        text-align: center;
+    }
+
+    .basic-2 {
+        font-size: 1.8rem;
+        color: $label;
+        font-weight: 700;
+        margin-bottom: 0;
+        text-align: center;
+    }
+
+    .location {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        img {
+            margin-right: 5px;
+        }
+    }
+
+    .edit-address {
+        background-color: $label;
+        color: $white;
+        font-size: 10px;
+        width: 86px;
+        height: 21px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 3px;
+        border: none;
+        font-weight: 300;
+        margin-top: .6rem;
+        margin-bottom: 1rem;
+
+        &:hover {
+            background: $primary;
+        }
+    }
+
+    .hr-line {
+        border-top: 1px solid #DFDFDF;
+        margin: 5px auto;
+        width: 75%;
+    }
+}
+
+.input-calender {
+    width: 75%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10rem;
+
+    @include small-767 {
+        margin-bottom: 1rem;
+    }
+
+    .custom-input {
+        width: 100%;
+        height: 26px;
+        border-radius: 3px;
+        border: 1px solid $text-7;
+        padding: 2px 3rem 2px 1rem;
+        font-size: 13px;
+        font-weight: 400;
+        color: $label;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &::placeholder {
+            color: $label;
+        }
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    .img-cal {
+        position: absolute;
+        right: 0rem;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        cursor: pointer;
+        width: 3.5rem;
+        height: 26px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.custom-drop-deliver {
+    width: 75%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10rem;
+
+    form {
+        width: 100%;
+    }
+
+    select {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        // appearance: none;
+        border: none;
+    }
+
+    .custom-select {
+        height: 26px;
+        width: 100%;
+        border-radius: 3px;
+        border: 1px solid #777777;
+        padding: 2px 3rem 2px 1rem;
+        font-size: 13px;
+        font-weight: 400;
+        color: #003075;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        // -webkit-appearance: none;
+        // -moz-appearance: none;
+        // appearance: none;
+
+        &:focus {
+            box-shadow: none;
+        }
+    }
+}
+
+
+.mt-sett-align-top {
+    margin-top: 1rem !important;
+}
+
+.cneter-text-p {
+    .delivery-bottm-text {
+        text-align: center;
+        font-size: 1.6rem;
+        color: #0D0D0D;
+        margin-bottom: 0;
+    }
+}
+
+.pick-up-box .location.loc-deliverypick {
+    width: 70%;
+}

@@ -1,0 +1,128 @@
+.pick-up-box.pick-up-box-member {
+    @include small-767 {
+        margin: 3rem 15px 1rem;
+    }
+
+    .top-choice {
+        position: absolute;
+        top: -3rem;
+        transform: translateX(-50%);
+        left: 50%;
+        background-color: $primary;
+        border-top-left-radius: 1.4rem;
+        border-top-right-radius: 1.4rem;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.6rem;
+        font-weight: 700;
+        color: $white;
+        width: 12rem;
+        min-width: 12rem;
+        height: 3rem;
+    }
+
+    position: relative;
+
+    &.active {
+        border: 1px solid $primary;
+
+        .top-choice {
+            display: flex;
+        }
+    }
+
+    .pick-img {
+        width: 7.2rem;
+        height: 7.6rem;
+        margin: 2rem 0 2rem;
+
+        @include small-767 {
+            margin: 1rem 0;
+        }
+    }
+
+    .basic {
+        min-height: unset;
+    }
+
+    .member-para {
+        font-size: 1.4rem;
+        font-weight: 400;
+        color: #707070;
+        margin-bottom: 0;
+    }
+
+    .basic-2 {
+        font-size: 1.4rem;
+        text-align: left;
+        width: 100%;
+        margin-top: 2rem;
+        margin-bottom: 3px;
+
+        @include small-767 {
+            font-size: 1.6rem;
+            margin-top: 1rem;
+        }
+    }
+
+    .benefit-box {
+        width: 100%;
+        height: 12rem;
+
+        @include small-767 {
+            min-height: unset;
+            height: 8rem;
+        }
+
+        .benefit-text {
+            font-size: 1.4rem;
+            font-weight: 400;
+            color: #707070;
+            margin-bottom: 3px;
+            width: 100%;
+            text-align: start;
+
+            @include small-767 {
+                font-size: 1.6rem;
+                display: flex;
+            }
+
+            span {
+                svg {
+                    width: 14px;
+                    height: 14px;
+                    stroke: $label;
+                    margin-right: 5px;
+                    // margin-top: -3px;
+                }
+            }
+        }
+    }
+
+    .hr-line {
+        width: 90%;
+        margin: 1rem 0;
+    }
+
+    .deliver-by {
+        font-size: 1.3rem;
+        color: #707070;
+        margin-bottom: .8rem;
+
+        @include small-767 {
+            font-size: 1.5rem;
+        }
+    }
+
+    .save-t {
+        font-size: 1.8rem;
+        color: $primary;
+        font-weight: 700;
+        margin-bottom: 4rem;
+
+        @include small-767 {
+            margin-bottom: 1.6rem;
+        }
+    }
+}

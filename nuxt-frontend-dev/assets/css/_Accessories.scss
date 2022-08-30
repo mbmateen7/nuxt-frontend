@@ -1,0 +1,1128 @@
+.accessories-main {
+    padding: 0rem 0 0rem;
+}
+
+.accessories-btns {
+    display: contents;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    .access-btn-1 {
+        color: #4A4F57;
+        width: 30.1rem;
+        height: 6.1rem;
+        background: #D4D4D4;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2.5rem;
+        font-weight: 600;
+        transition: ease-in-out .3s;
+        position: relative;
+
+        @include large-1440 {
+            font-size: 2rem;
+            height: 5.5rem;
+            width: auto;
+            padding: .5rem 3rem;
+        }
+
+        &::after {
+            position: absolute;
+            content: '';
+            width: 0;
+            height: 0;
+            border-left: 1rem solid transparent;
+            border-right: 1rem solid transparent;
+            border-top: 2.1rem solid $primary;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: -1.5rem;
+            z-index: 0;
+            opacity: 0;
+        }
+
+        &:hover {
+            color: $white;
+            transition: ease-in-out .3s;
+            background: $primary;
+
+            &::after {
+                opacity: 1;
+                transition: ease-in-out .5s;
+            }
+        }
+
+        &.active {
+            color: $white;
+            transition: ease-in-out .3s;
+            background: $primary;
+
+            &::after {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.helmet-section {
+    padding: 6rem 0 6rem;
+
+    // margin: 0 auto;
+    // min-height: 548px;
+    @include small-767 {
+        padding: 1rem 0 1rem;
+    }
+}
+
+.margin-mobile-resposive {
+    @include small-767 {
+        margin: 2rem 0 2rem;
+    }
+
+    .accessories-btns {
+        .nav-item {
+            @include m-575 {
+                width: 100%;
+            }
+        }
+
+        .access-btn-1 {
+            @include m-575 {
+                width: 100%;
+            }
+
+            &::after {
+                @include m-575 {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+.helmet-section-main {
+    padding-top: 5rem;
+}
+
+.top-box-section-main {
+    padding-top: 3rem;
+    padding-bottom: 1.5rem;
+}
+
+.flex-center {
+    justify-content: center;
+
+    @include medium-991 {
+        justify-content: flex-start;
+    }
+}
+
+.card-main-helmet {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &::-webkit-scrollbar {
+        width: 3px;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+        background: #ccc;
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+        background: $primary;
+    }
+
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+        background: $primary;
+    }
+
+    @include large-1680 {
+        flex-wrap: wrap;
+        // justify-content: flex-start;
+    }
+
+    @include small-767 {
+        width: 100%;
+        flex-wrap: unset;
+        width: 100%;
+        overflow-x: scroll;
+        justify-content: unset;
+    }
+
+    @include m-425 {
+        // justify-content: center;
+    }
+}
+
+.card-main-helmet.card-main-helmet-check-out {
+    overflow-x: auto;
+    justify-content: flex-start;
+    flex-wrap: unset;
+
+    // width: 100%;
+    // margin: 0 auto;
+    &::-webkit-scrollbar {
+        width: 3px;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+        background: #ccc;
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+        background: $primary;
+    }
+
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+        background: $primary;
+    }
+}
+
+.card-main-top-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include small-767 {
+        flex-wrap: unset;
+        justify-content: unset;
+        width: 100%;
+        overflow-x: scroll;
+    }
+
+    &::-webkit-scrollbar {
+        width: 3px;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+        background: #ccc;
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+        background: $primary;
+    }
+
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+        background: $primary;
+    }
+}
+
+.card-helmet {
+    width: 30rem;
+    min-width: 30rem;
+    border: 1px solid #9E9E9E;
+    border-radius: 2.8rem;
+    padding: 2rem 0;
+    // overflow: hidden;
+    cursor: pointer;
+    background: $white;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 3rem;
+
+    &.top-box-main {
+        .helmet-img {
+            width: 20.4rem;
+            height: 20.4rem;
+
+            &.img-suit {
+                @include large-1199 {
+                    height: 25rem;
+                }
+
+                @include small-767 {
+                    height: 28.4rem;
+                }
+
+                @include m-375 {
+                    height: 34.4rem;
+                }
+            }
+        }
+    }
+
+    @include large-1440 {
+        width: 31.5rem;
+    }
+
+    @include large-1370 {
+        width: 29.5rem;
+        min-width: 29.5rem;
+    }
+
+    @include large-1290 {
+        width: 27rem;
+        min-width: 27rem;
+    }
+
+    @include large-1270 {
+        width: 27.2rem;
+        min-width: 27.2rem;
+    }
+
+    @include large-1199 {
+        width: 36rem;
+        min-width: 36rem;
+    }
+
+    @include medium-991 {
+        width: 25rem;
+        min-width: 25rem;
+    }
+
+    @include small-767 {
+        width: 29.3rem;
+        min-width: 29.3rem;
+        margin-bottom: 1rem;
+        padding: 2rem 0;
+    }
+
+    @include m-575 {
+        width: 32rem;
+        min-width: 32rem;
+    }
+
+    @include m-425 {
+        width: 50%;
+        min-width: 50%;
+        margin: 0 7px 1rem 7px;
+    }
+
+    @include m-414 {
+        width: 55%;
+        min-width: 55%;
+    }
+
+    @include m-320 {
+        width: 60%;
+        min-width: 60%;
+    }
+
+    &:hover {
+        border-color: $label;
+
+        .helmet-btn-add-to {
+            background-color: $button-color;
+            transition: ease-in-out .3s;
+        }
+    }
+
+    .helmet-top {
+        position: relative;
+        width: 100%;
+        padding: 0rem 2rem;
+    }
+
+    .helmet-img {
+        width: 18.6rem;
+        height: 18.6rem;
+        display: flex;
+        // align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+
+        // background-color: #9E9E9E;
+        // &.top-box-main {
+        //     width: 20.4rem;
+        //     height: 20.4rem;
+        // }
+        @include m-425 {
+            width: 16.6rem;
+            height: 16.6rem;
+        }
+    }
+
+    .radio-color-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 1.3rem 0;
+
+        .color-radio {
+            display: block;
+            position: relative;
+            height: 1.8rem;
+            width: 1.8rem;
+            border-radius: 50%;
+            overflow: hidden;
+            cursor: pointer;
+            margin: 0rem;
+            margin-right: 1rem;
+
+            &:last-child {
+                margin-right: 0rem;
+            }
+
+            /* Hide the browser's default radio button */
+            input {
+                position: absolute;
+                opacity: 0;
+                cursor: pointer;
+                display: none;
+            }
+
+            /* Create a custom radio button */
+            .checkmark {
+                position: absolute;
+                top: 0rem;
+                left: 0;
+                background-color: #E92222;
+                width: 100%;
+                height: 100%;
+                border: none;
+                border-radius: 5px;
+                font-size: 1.8rem;
+                font-weight: 600;
+                text-transform: uppercase;
+
+                img {
+                    object-fit: fill;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            /* When the radio button is checked, add a blue background */
+            input:checked~.checkmark {
+                background: #E92222;
+                color: $white;
+            }
+
+            /* Create the indicator (the dot/circle - hidden when not checked) */
+            .checkmark:after {
+                content: "";
+                position: absolute;
+                display: none;
+            }
+
+            /* Create the checkmark/indicator (hidden when not checked) */
+            .checkmark:after {
+                content: "";
+                position: absolute;
+                display: none;
+            }
+
+            /* Show the checkmark when checked */
+            input:checked~.checkmark:after {
+                display: block;
+            }
+
+            /* Style the checkmark/indicator */
+            .checkmark:after {
+                // left: 1.5rem;
+                // top: 0.5rem;
+                // width: 0.7em;
+                // height: 2.6rem;
+                // border: solid $white;
+                // left: 1.6rem;
+                //   top: 0.8rem;
+                //   width: 0.6em;
+                //   height: 2.3rem;
+                left: 1.6rem;
+                top: 0.6rem;
+                width: 0.6em;
+                height: 2.3rem;
+                border: solid #fff;
+                border-width: 0 3.5px 3.5px 0;
+                border-width: 0 2px 2px 0;
+                transform: rotate(45deg);
+            }
+        }
+    }
+
+    .accessories-banner {
+        width: 100%;
+        height: 6.8rem;
+        background: #F2F2F2;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0 1.6rem;
+
+        @include m-575 {
+            height: auto;
+            padding: 1rem 1.6rem;
+        }
+    }
+
+    .accessories-h2 {
+        font-size: 1.8rem;
+        color: $label;
+        font-weight: 700;
+        margin-bottom: 0rem;
+    }
+
+    .shell-pare {
+        font-size: 12px;
+        color: $text-70;
+        font-weight: 400;
+        margin-bottom: 0;
+    }
+
+    .helmet-card-body {
+        padding: 1.6rem 1.6rem 0;
+
+        @include small-767 {
+            padding: 1rem 1.6rem 0;
+        }
+
+        .size-box {
+            align-items: center;
+            margin-bottom: 1.6rem;
+
+            @include small-767 {
+                margin-bottom: .75rem;
+            }
+
+            @include m-375 {
+                align-items: flex-start;
+                flex-direction: column;
+            }
+
+            @include m-320 {
+                align-items: center;
+                flex-direction: row;
+            }
+
+            .size-p {
+                font-size: 1.8rem;
+                color: $label;
+                font-weight: 700;
+                margin-bottom: 0;
+                margin-right: 1.6rem;
+                min-width: 55px;
+            }
+
+            .drop-size {
+                .btn-primary {
+                    width: 77px;
+                    height: 26px;
+                    border-radius: 3px;
+                    background: $button-color;
+                    border-color: $button-color;
+                    text-align: left;
+                    font-size: 14px;
+                    color: $white;
+                    font-weight: 400;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+
+                    &:focus {
+                        outline: none;
+                        box-shadow: none;
+                    }
+                }
+
+                .dropdown-toggle::after {
+                    border: none;
+                    background-image: url('/arrow-down.svg');
+                    width: 10px;
+                    height: 5px;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    margin-left: 0.8rem;
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    right: 8px;
+                }
+
+                .dropdown-item {
+                    font-size: 12px;
+                }
+
+                .dropdown-menu {
+                    min-width: 77px;
+                }
+            }
+        }
+
+        .totatl-accessories {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.5rem;
+
+            @include small-767 {
+                margin-bottom: .75rem;
+            }
+
+            .toatl-price-acc {
+                font-size: 2.4rem;
+                font-weight: 700;
+                color: $label;
+                margin-bottom: 0;
+                margin-right: 1.6rem;
+            }
+
+            .discount-p {
+                font-size: 1.8rem;
+                font-weight: 400;
+                color: $text-70;
+                margin-bottom: 0;
+                text-decoration: line-through;
+            }
+        }
+    }
+}
+
+.bg-1 {
+    background-color: #E98C22;
+}
+
+.bg-2 {
+    background-color: red;
+}
+
+.helmet-btn-add-to {
+    width: 130px;
+    height: 38px;
+    background: $label;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px 1rem;
+    font-size: 16px;
+    font-weight: 600;
+    color: $white;
+
+    &:hover {
+        color: $white;
+    }
+}
+
+.card-helmet .radio-color-box .color-radio.yellow .checkmark {
+    background-color: #E98C22;
+}
+
+.card-helmet .radio-color-box .color-radio.black .checkmark {
+    background-color: #040404;
+}
+
+.card-helmet .radio-color-box .color-radio.yellow input:checked~.checkmark {
+    background-color: #E98C22;
+}
+
+.card-helmet .radio-color-box .color-radio.black input:checked~.checkmark {
+    background-color: #040404;
+}
+
+.afford-text {
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: $text-78;
+    margin-bottom: 2.5rem;
+    margin-top: 2.5rem;
+    text-align: center;
+}
+
+.accessories-main-page {
+    padding: 4.5rem 0 0rem;
+}
+
+.helmets-main {
+    font-size: 4rem;
+    font-weight: 700;
+    color: $black;
+    margin-bottom: 4rem;
+    text-decoration: underline;
+}
+
+.card-accessories-main {
+    width: 100%;
+    min-width: 100%;
+    box-shadow: 0 0 5px #00000029;
+    border-radius: 2.8rem;
+    padding: 2rem 0;
+    // overflow: hidden;
+    cursor: pointer;
+    background: $white;
+    margin-bottom: 3rem;
+    border: 1px solid transparent;
+
+    &:hover {
+        border: 1px solid $label;
+    }
+
+    &.top-box-main {
+        .helmet-img {
+            width: 20.8rem;
+            height: 20.8rem;
+        }
+    }
+
+    @include m-425 {
+        width: 100%;
+        min-width: 100%;
+    }
+
+    &:hover {
+        border-color: $label;
+
+        .helmet-btn-add-to {
+            background-color: $button-color;
+            transition: ease-in-out .3s;
+            color: $white;
+        }
+    }
+
+    .helmet-top {
+        position: relative;
+        width: 100%;
+        padding: 0rem 2rem;
+    }
+
+    .helmet-img {
+        width: 20.6rem;
+        height: 20.6rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        // background-color: #eee;
+        // &.top-box-main {
+        //     width: 20.4rem;
+        //     height: 20.4rem;
+        // }
+    }
+
+    .radio-color-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 1.6rem 0 0;
+
+        .color-radio {
+            display: block;
+            position: relative;
+            height: 2.2rem;
+            width: 2.2rem;
+            border-radius: 50%;
+            // overflow: hidden;
+            cursor: pointer;
+            margin: 0rem;
+            margin-right: 1rem;
+            border-radius: 50%;
+
+            &:last-child {
+                margin-right: 0rem;
+            }
+
+            /* Hide the browser's default radio button */
+            input {
+                position: absolute;
+                opacity: 0;
+                cursor: pointer;
+                display: none;
+            }
+
+            /* Create a custom radio button */
+            .checkmark {
+                position: absolute;
+                top: 0rem;
+                left: 0;
+                background-color: #FF0000;
+                width: 100%;
+                height: 100%;
+                border: none;
+                border-radius: 5px;
+                font-size: 1.8rem;
+                font-weight: 600;
+                text-transform: uppercase;
+                border-radius: 50%;
+
+                img {
+                    object-fit: fill;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            /* When the radio button is checked, add a blue background */
+            input:checked~.checkmark {
+                background: $white;
+                color: $white;
+                border: 1px solid #FF0000;
+            }
+
+            /* Create the indicator (the dot/circle - hidden when not checked) */
+            .checkmark:after {
+                content: "";
+                position: absolute;
+                display: none;
+            }
+
+            /* Create the checkmark/indicator (hidden when not checked) */
+            .checkmark:after {
+                content: "";
+                position: absolute;
+                display: none;
+            }
+
+            /* Show the checkmark when checked */
+            input:checked~.checkmark:after {
+                display: block;
+            }
+
+            /* Style the checkmark/indicator */
+            .checkmark:after {
+                top: 50%;
+                left: 50%;
+                -webkit-transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+                width: 1.8rem;
+                height: 1.8rem;
+                border-radius: 50%;
+                background: #FF0000;
+            }
+        }
+    }
+
+    .card-body-accessories-heading {
+        .headingsecond {
+            font-size: 1.8rem;
+            color: $black;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+    }
+
+    .helmet-card-body {
+        padding: 1.6rem 1.6rem 0;
+
+        .size-box {
+            align-items: center;
+            margin-bottom: 1rem;
+
+            @include m-425 {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            @include m-320 {
+                flex-direction: row;
+                align-items: center;
+            }
+
+            .size-p {
+                font-size: 1.8rem;
+                color: $label;
+                font-weight: 400;
+                margin-bottom: 0;
+                margin-right: 1.6rem;
+                min-width: 44px;
+
+                @include large-1199 {
+                    margin-right: 1rem;
+                    min-width: 36px;
+                }
+            }
+
+            .drop-size {
+                .btn-primary {
+                    width: 77px;
+                    height: 26px;
+                    border-radius: 3px;
+                    background: $primary;
+                    border-color: $primary;
+                    text-align: left;
+                    font-size: 14px;
+                    color: $white;
+                    font-weight: 400;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+
+                    &:focus {
+                        outline: none;
+                        box-shadow: none;
+                    }
+
+                    @include m-425 {
+                        width: 58px;
+                        font-size: 12px;
+                    }
+
+                    @include m-425 {
+                        width: 77px;
+                        font-size: 14px;
+                    }
+                }
+
+                .dropdown-toggle::after {
+                    border: none;
+                    background-image: url('/arrow-down.svg');
+                    width: 10px;
+                    height: 5px;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    margin-left: 0.8rem;
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    right: 8px;
+                }
+
+                .dropdown-item {
+                    font-size: 12px;
+                }
+
+                .dropdown-menu {
+                    min-width: 77px;
+
+                    @include m-425 {
+                        min-width: 58px;
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+
+        .totatl-accessories {
+            display: flex;
+            align-items: center;
+            margin-bottom: 0rem;
+
+            .toatl-price-acc {
+                font-size: 1.8rem;
+                font-weight: 700;
+                color: $label;
+                margin-bottom: 0;
+                margin-right: 1.6rem;
+            }
+
+            .discount-p {
+                font-size: 1.8rem;
+                font-weight: 400;
+                color: $text-70;
+                margin-bottom: 0;
+                text-decoration: line-through;
+            }
+        }
+    }
+}
+
+.card-accessories-main .radio-color-box .color-radio.yellow .checkmark {
+    background-color: #E98C22;
+}
+
+.card-accessories-main .radio-color-box .color-radio.yellow .checkmark:after {
+    background: #E98C22;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 1.8rem;
+    height: 1.8rem;
+    border-radius: 50%;
+}
+
+.card-accessories-main .radio-color-box .color-radio.yellow input:checked~.checkmark {
+    background: #fff;
+    color: #fff;
+    border: 1px solid #E98C22;
+}
+
+.card-accessories-main .radio-color-box .color-radio.black .checkmark {
+    background-color: #040404;
+}
+
+.card-accessories-main .radio-color-box .color-radio.black .checkmark:after {
+    background: #040404;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 1.8rem;
+    height: 1.8rem;
+    border-radius: 50%;
+}
+
+.card-accessories-main .radio-color-box .color-radio.black input:checked~.checkmark {
+    background: #fff;
+    color: #fff;
+    border: 1px solid #040404;
+}
+
+.buynow-cart {
+    .buy-now-btn-cart {
+        width: 5.8rem;
+        height: 5.8rem;
+        background: $primary;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 1.5rem;
+
+        @include m-425 {
+            width: 4.5rem;
+            height: 4.5rem;
+        }
+
+        @include m-375 {
+            width: 5.8rem;
+            height: 5.8rem;
+        }
+
+        svg {
+            width: 2rem;
+            height: 2rem;
+            color: $white;
+        }
+
+        i.fa {
+            color: $button-color;
+            font-size: 24px;
+        }
+
+        &:hover {
+            background: $button-color;
+            transition: ease-in-out .4s;
+
+            i.fa {
+                color: $label;
+                font-size: 24px;
+            }
+        }
+    }
+}
+
+.form-bootm {
+    margin-top: 3rem;
+    margin-bottom: 4.5rem;
+
+    .input-style {
+        margin-bottom: 2rem;
+
+        // @include large-1440 {
+        //     margin-bottom: 3.5rem;
+        // }
+        .ctm-textarea {
+            border: none;
+            border-bottom: 1px solid #818181;
+            padding: 2px 1rem 2px 0;
+            border-radius: 0;
+            height: 5rem;
+            display: inline-block;
+            // text-align: center;
+        }
+    }
+
+    .input-style .ctm-input {
+        font-size: 1.6rem;
+        font-weight: 400;
+        font-style: normal;
+        // color: #BBBBBB;
+        border-bottom: 1px solid #818181;
+        padding: 2px 1rem 2px 0;
+
+        &::placeholder {
+            font-size: 1.6rem;
+            font-weight: 500;
+            font-style: normal;
+            color: #BBBBBB;
+        }
+    }
+}
+
+.btn-send-get {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    // margin-bottom: 3.5rem;
+    .get-btn {
+        width: 15.5rem;
+        height: 5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.6rem;
+        font-weight: 400;
+        color: $white;
+        background: $primary;
+        border-radius: 1.4rem;
+        border: none;
+
+        &:hover {
+            background: $button-color;
+            transition: ease-in-out .4s;
+        }
+    }
+}
+
+.get-maps {
+    width: 100%;
+    height: 25.7rem;
+    border-radius: 2rem;
+    box-shadow: 0 3px 6px #00000029;
+    overflow: hidden;
+
+    @include small-767 {
+        // margin-bottom: 3.5rem;
+        margin-top: 3rem;
+    }
+}
+
+.col-sett-mobile {
+    @include m-425 {
+        width: 50% !important;
+    }
+
+    @include m-320 {
+        width: 100% !important;
+    }
+}
+
+.access-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .tile-left {
+        .access-title {
+            font-size: 1.8rem;
+            color: $black;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            width: 18rem;
+            min-width: 18rem;
+
+            @include small-767 {
+                width: 12rem;
+                min-width: 12rem;
+            }
+        }
+
+        .access-pr {
+            font-size: 1.8rem;
+            color: $label;
+            font-weight: 700;
+            margin-bottom: 0rem;
+        }
+    }
+}

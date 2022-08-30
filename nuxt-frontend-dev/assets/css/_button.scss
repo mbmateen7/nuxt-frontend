@@ -1,0 +1,312 @@
+// log in page putton
+.btn-chooose-sleact {
+    height: 6.3rem;
+    // line-height: 5.5rem;
+    border-radius: 1.6rem;
+    background: $button-color;
+    font-size: 1.6rem;
+    box-shadow: -4px 6px 9px #00000029;
+    font-weight: 700;
+    text-transform: capitalize;
+    outline: none;
+    border: none;
+    width: 12rem;
+    min-width: 12rem;
+    color: $white;
+    transition: ease-in-out .4s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include medium-991 {
+        width: 13.6rem;
+        min-width: 13.6rem;
+        height: 4.8rem;
+        border-radius: 1.6rem;
+    }
+
+    @include m-425 {
+        margin-top: 1rem;
+    }
+
+    &:hover {
+        background: $primary;
+        transition: ease-in-out .4s;
+        color: $white;
+    }
+
+    &.selected {
+        background: $primary;
+        transition: ease-in-out .4s;
+        color: $white;
+    }
+}
+
+.rust-btn-add {
+    height: 37px;
+    // line-height: 5.5rem;
+    border-radius: 1.4rem;
+    background: $primary;
+    font-size: 16px;
+    box-shadow: -4px 6px 9px #00000029;
+    font-weight: 700;
+    text-transform: capitalize;
+    outline: none;
+    border: none;
+    width: 134px;
+    min-width: 134px;
+    color: $white;
+    transition: ease-in-out .4s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+        background: $button-color;
+        transition: ease-in-out .4s;
+        color: $white;
+    }
+}
+
+.login-p {
+    height: 6.8rem;
+    // line-height: 5.5rem;
+    border-radius: 1.6rem;
+    background: $button-color;
+    font-size: 1.4rem;
+    box-shadow: -4px 6px 9px #00000029;
+    font-weight: 700;
+    text-transform: capitalize;
+    outline: none;
+    border: none;
+    width: 15.6rem;
+    min-width: 15.6rem;
+    color: $white;
+    transition: ease-in-out .4s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include medium-991 {
+        width: 13.6rem;
+        min-width: 13.6rem;
+        height: 4.8rem;
+        border-radius: 1.6rem;
+    }
+
+    &:hover {
+        background: $primary;
+        transition: ease-in-out .4s;
+        color: $white;
+    }
+}
+
+.save-btn-b {
+    height: 6.3rem;
+    // line-height: 5.5rem;
+    border-radius: 1.4rem;
+    background: $primary;
+    font-size: 1.6rem;
+    box-shadow: -4px 6px 9px #00000029;
+    font-weight: 700;
+    text-transform: capitalize;
+    outline: none;
+    border: none;
+    width: 21.7rem;
+    min-width: 21.7rem;
+    color: $white;
+    transition: ease-in-out .4s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include medium-991 {
+        // width: 13.6rem;
+        // min-width: 13.6rem;
+        // height: 4.8rem;
+        // border-radius: 1.6rem;
+    }
+
+    &:hover {
+        background: $button-color;
+        transition: ease-in-out .4s;
+        color: $white;
+    }
+}
+
+.add-cart-to {
+    height: 5.2rem;
+    // line-height: 5.5rem;
+    border-radius: 1.4rem;
+    background: $text-7;
+    font-size: 1.6rem;
+    box-shadow: -4px 6px 9px #00000029;
+    font-weight: 700;
+    text-transform: capitalize;
+    outline: none;
+    border: none;
+    width: 15.2rem;
+    min-width: 15.2rem;
+    color: $white;
+    transition: ease-in-out .4s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    box-shadow: -4px 6px 9px #00000029;
+
+    @include medium-991 {
+        // width: 13.6rem;
+        // min-width: 13.6rem;
+        // height: 4.8rem;
+        // border-radius: 1.6rem;
+    }
+
+    &:hover {
+        background: $label;
+        transition: ease-in-out .4s;
+        color: $white;
+    }
+}
+
+.btn-address {
+    height: 5.5rem;
+    border-radius: 1rem;
+    background: $primary;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    outline: none;
+    border: none;
+    width: 4.4rem;
+    min-width: 4.4rem;
+    color: $white;
+    transition: ease-in-out .4s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 2.7rem;
+
+    .plus {
+        padding-right: 0px;
+    }
+
+    &:hover {
+        background: $heading;
+        transition: ease-in-out .4s;
+        color: $white;
+    }
+
+    @include large-1370 {
+        height: 4.5rem;
+    }
+}
+
+.rent-btn {
+    height: 5.3rem;
+    border-radius: 1.5rem;
+    background: $white;
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    outline: none;
+    border: none;
+    width: 16.2rem;
+    min-width: 16.2rem;
+    color: $black;
+    transition: ease-in-out .4s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+        background: $primary;
+        transition: ease-in-out .4s;
+        color: $white;
+    }
+
+    @include large-1370 {
+        font-size: 1.6rem;
+    }
+}
+
+.view-more-btn {
+    height: 6.3rem;
+    border-radius: 1.5rem;
+    background: $primary;
+    font-size: 2rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    outline: none;
+    border: none;
+    width: 24rem;
+    min-width: 24rem;
+    color: $white;
+    transition: ease-in-out .4s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+        background: $button-color;
+        transition: ease-in-out .4s;
+        color: $white;
+    }
+
+    // @include large-1370 {
+    //     height: 4.5rem;
+    // }
+}
+
+.logs-mobile-btn {
+    height: 39px;
+    border-radius: 18px;
+    background: $button-color;
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    outline: none;
+    border: 1px solid $button-color;
+    width: 100%;
+    min-width: 100%;
+    color: $white;
+    transition: ease-in-out .4s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+
+    &:hover {
+        background: transparent;
+        transition: ease-in-out .4s;
+        color: $white;
+        border-color: $white;
+    }
+}
+
+.logs-mobile-btn2 {
+    height: 39px;
+    border-radius: 18px;
+    background: transparent;
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    outline: none;
+    border: 1px solid $white;
+    width: 100%;
+    min-width: 100%;
+    color: $white;
+    transition: ease-in-out .4s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+        background: $button-color;
+        transition: ease-in-out .4s;
+        color: $white;
+        border-color: $button-color;
+    }
+}

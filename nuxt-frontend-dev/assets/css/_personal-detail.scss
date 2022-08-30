@@ -1,0 +1,294 @@
+.cards-login.personal-detail-card {
+    // height: 66vh;
+    height: unset;
+
+    @include large-1290 {
+        margin: 0;
+    }
+
+    @include small-767 {
+        padding: 2rem 0;
+    }
+}
+
+.height-for-mobile {
+    @include small-767 {
+        height: 60rem;
+        overflow-y: scroll;
+    }
+
+    &::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+        background: #777;
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+        background: $primary;
+    }
+
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+        background: $primary;
+    }
+}
+
+.personal-detail-cart {
+    display: flex;
+    // align-items: center;
+    justify-content: space-between;
+
+    @include m-425 {
+        flex-direction: column;
+        display: none;
+    }
+}
+
+.circle-check {
+    font-size: 1.8rem;
+    color: $text-7;
+}
+
+.progress-link.active .circle-check {
+    color: $white;
+}
+
+.progress-link:hover .circle-check {
+    color: $white;
+}
+
+.cart-logos {
+    display: flex;
+
+    .motor-bike {
+        width: 5.9rem;
+        height: 5.6rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $white;
+        box-shadow: 0 12px 30px #00000029;
+        border-radius: 1.4rem;
+        margin-right: 1rem;
+        overflow: hidden;
+        padding: .8rem;
+
+        img {
+            width: 4.2rem;
+            max-height: 100%;
+        }
+
+        @include m-575 {
+            // width: 8.9rem;
+            // height: 7.6rem;
+        }
+
+        @include m-375 {
+            // width: 9.9rem;
+            // height: 8.6rem;
+        }
+    }
+
+    .total-bike {
+        box-shadow: 0 12px 30px #00000029;
+        padding: 5px 1rem;
+        background-color: $white;
+        display: flex;
+        border-radius: 1.4rem;
+        align-items: center;
+        max-height: 5.6rem;
+
+        svg {
+            width: 2.4rem;
+        }
+    }
+
+    .img-cart {
+        margin-right: 1rem;
+    }
+
+    .price-t {
+        font-size: 12px;
+        color: $text-7;
+        font-weight: 400;
+        margin-bottom: 0;
+
+        @include small-767 {
+            font-size: 10px;
+        }
+    }
+
+    .prive-value {
+        font-size: 1.6rem;
+        color: $button-color;
+        font-weight: 700;
+        margin-bottom: 0;
+    }
+}
+
+.margin-custom-personal {
+    margin: 1rem auto 4rem;
+
+    @include small-767 {
+        margin: 0;
+    }
+}
+
+.box-card-personal {
+    &.box-card {
+        height: auto;
+        padding: 3rem 1.6rem 2rem;
+
+        // margin: 7rem auto 9.5rem;
+        @include small-767 {
+            margin: 3rem auto 3rem;
+            box-shadow: 0px 5px 21px #00000029;
+        }
+    }
+
+    .personal-h {
+        font-size: 2.4rem;
+        color: $button-color;
+        font-weight: 700;
+        margin-bottom: 0;
+        margin-bottom: 3.7rem;
+    }
+
+    .input-style label {
+        font-size: 1.4rem;
+        color: $text-7;
+        font-weight: 400;
+    }
+
+    .input-style .ctm-input {
+        font-size: 1.8rem;
+        font-weight: 700;
+        color: $label;
+        font-style: normal;
+        padding-left: 0;
+
+        &::placeholder {
+            font-size: 1.5rem;
+        }
+    }
+
+    .save-btn {
+        margin: 3rem auto;
+    }
+}
+
+.search-bar-ctm {
+    width: 100%;
+    margin-bottom: 0rem;
+
+    .type-pass {
+        position: relative;
+        z-index: 999;
+
+        .dropdown-content {
+            display: none;
+            // display: block;
+            position: absolute;
+            background-color: $white;
+            border-radius: 1rem;
+            margin-bottom: 0;
+            min-width: 160px;
+            width: 100%;
+            overflow: auto;
+            box-shadow: 0 3px 6px #00000029;
+            z-index: 1;
+            height: 30rem;
+            bottom: 5rem;
+
+            /* width */
+            &::-webkit-scrollbar {
+                width: 5px;
+            }
+
+            /* Track */
+            &::-webkit-scrollbar-track {
+                background: #f1f1f1;
+            }
+
+            /* Handle */
+            &::-webkit-scrollbar-thumb {
+                background: $primary;
+            }
+
+            /* Handle on hover */
+            &::-webkit-scrollbar-thumb:hover {
+                background: #555;
+            }
+
+            &.show {
+                display: block;
+            }
+
+            .list-ctm-drop {
+                a {
+                    display: block;
+                    padding: 1rem 1.6rem;
+                    width: 100%;
+                    color: #150000;
+                    font-size: 1.4rem;
+                    font-weight: 400;
+                    transition: ease-in-out .4s;
+
+                    &:hover {
+                        color: $white;
+                        background: $primary;
+                    }
+                }
+            }
+        }
+    }
+
+    .input-style {
+        width: 100%;
+    }
+
+    .login-input .input-style .ctm-input {
+        font-size: 1.8rem;
+        font-weight: 700;
+        color: #003075;
+        font-style: normal;
+        padding-left: 0;
+    }
+
+    .input-style .type-pass .icon-eye {
+        height: 4.8rem;
+    }
+
+    .input-style .type-pass::after {
+        position: absolute;
+        display: block;
+        content: '';
+        width: 6px;
+        height: 6px;
+        top: 50%;
+        right: 2rem;
+        margin-top: -3px;
+        border-top: 1px solid #000;
+        border-left: 1px solid #000;
+        -webkit-transform: rotate(45deg) translateY(-50%);
+        -ms-transform: rotate(45deg) translateY(-50%);
+        transform: rotate(45deg) translateY(-50%);
+        -webkit-transition: all .2s ease-in-out;
+        -o-transition: all .2s ease-in-out;
+        transition: all .2s ease-in-out;
+        -webkit-transform-origin: 50% 0;
+        -ms-transform-origin: 50% 0;
+        transform-origin: 50% 0;
+        z-index: -1;
+    }
+}
+
+.box-card.box-card-personal {
+    .input-style.mb-2 {
+        margin-bottom: 2rem !important;
+    }
+}
